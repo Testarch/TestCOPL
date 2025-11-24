@@ -1,0 +1,38 @@
+# .copilotignore
+# Add file and folder patterns below to exclude them from Copilot suggestions
+#Secrets/
+#DummyData/
+#Generated/
+#OldCode/
+#Logs/
+#Temp/
+#Backups/
+#*.bak
+
+
+# Sensitive data
+Secrets/
+*.key
+*.pem
+
+# Dummy folders for testing
+DummyData/
+Temp/
+
+# Ignore generated files
+Generated/
+OldCode/
+
+# Logs and backups
+Logs/
+Backups/
+*.log
+*.bak
+
+# Build artifacts
+bin/
+obj/
+
+
+
+
