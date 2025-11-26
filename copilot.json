@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "architecture": {
+    "layers": ["controllers", "services", "repositories"],
+    "rules": {
+      "controllers": ["must call only services"],
+      "services": ["must call repositories"],
+      "repositories": ["must not call services or controllers"]
+    }
+  },
+  "naming": {
+    "controllers": "*Controller",
+    "services": "*Service",
+    "repositories": "*Repository"
+  },
+  "coding_style": {
+    "async_methods_require_suffix": true,
+    "require_xml_comments_on_public_methods": true
+  }
+}
